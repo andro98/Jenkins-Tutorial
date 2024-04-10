@@ -16,7 +16,7 @@ public class JenkinsServiceTest {
 
     @Test
     public void getJenkinsReturnsExpectedMessage() {
-        String expectedMessage = "Hello Jenkins!";
+        String expectedMessage = "Hello Jenkins";
         String actualMessage = jenkinsService.getJenkins();
 
         assertEquals(expectedMessage, actualMessage);
