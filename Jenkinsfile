@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage("checkout") {
-            steps {
-                sh "ls"
-                git branch:'master', url: 'https://github.com/andro98/Jenkins-Tutorial.git'
-                sh "ls"
-            }
-        }
         stage("build") {
             steps {
                 sh "chmod +x mvnw"
